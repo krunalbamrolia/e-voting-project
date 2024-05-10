@@ -1,0 +1,76 @@
+/* UserPage.css */
+
+/* General styling for the UserPage */
+.user-page {
+    display: flex; /* Flex layout for sidebar and content */
+  }
+  
+  .content-area {
+    flex-grow: 1; /* Grow to fill available space */
+    padding: 20px; /* Padding for the content area */
+    margin-left: 200px; /* Ensure it doesn't overlap with the sidebar */
+  }
+  
+  /* Styling for the "Add New Voter" button and search bar */
+  .user-page .d-flex {
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Align them vertically */
+    margin-bottom: 20px; /* Spacing below this section */
+  }
+  
+  /* Styling for the table displaying voters */
+  .user-page .table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Avoid extra space between cells */
+  }
+  
+  .user-page .table th,
+  .user-page .table td {
+    padding: 10px; /* Padding for table cells */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .user-page .table th {
+    background-color: #343a40; /* Dark background for table headers */
+    color: white; /* White text for headers */
+  }
+  
+  .user-page .table tbody tr {
+    background-color: #f8f9fa; /* Light gray for table rows */
+  }
+  
+  .user-page .table tbody tr:hover {
+    background-color: #e9ecef; /* Hover effect for table rows */
+  }
+  
+  .user-page .table-bordered {
+    border: 1px solid #dee2e6; /* Border for the table */
+  }
+  
+  /* Styling for the modal used to add a new voter */
+  .user-page .modal-header {
+    background-color: #343a40; /* Dark background for modal header */
+    color: white; /* White text for modal header */
+  }
+  
+  .user-page .modal-body {
+    padding: 20px; /* Padding for the modal body */
+  }
+  
+  .user-page .modal-footer {
+    display: flex; /* Flex layout for the footer */
+    justify-content: space-between; /* Space between the buttons */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .content-area {
+      margin-left: 60px; /* Adjust margin for smaller screens with collapsed sidebar */
+    }
+  
+    .user-page .d-flex {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      justify-content: flex-start; /* Align items at the start */
+    }
+  }
+  

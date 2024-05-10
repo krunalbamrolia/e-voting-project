@@ -1,0 +1,18 @@
+.table-container {
+  border: 1px solid;
+  max-height: 600px;
+  width: 500px;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+.table-fixed tbody tr {
+  height: 50px;
+  /* Set your desired row height */
+}
+
+.table-fixed td,
+.table-fixed th {
+  vertical-align: middle;
+  /* Adjust vertical alignment as needed */
+}
